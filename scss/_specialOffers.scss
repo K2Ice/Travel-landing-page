@@ -1,0 +1,128 @@
+.special-offers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 160px;
+
+  &__heading{
+    font-size: 48px;
+    margin: 160px 0 60px;
+  }
+
+  &__nav{
+    display: inline-flex;
+    list-style: none;
+    gap: 20px;
+    background-color: var(--whitePrimary);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    &-item{
+      font-size: 18px;
+      padding: 10px 25px;
+      border-radius: 10px;
+      background-color: transparent;
+      color: var(--blackBgcPrimary);
+    }
+
+    &-item.active{
+      background-color: var(--greenPrimary);
+      color: var(--whitePrimary);
+    }
+  }
+
+  .special-offers__cards{
+    display: flex;
+    gap: 30px;
+  }
+
+  .special-offers__card{
+    width: 33%;
+    padding: 20px;
+    background-color: var(--whitePrimary);
+    border-radius: 50px;
+
+    .offer-card{
+      
+
+      &-date{
+        writing-mode: vertical-lr;
+        letter-spacing: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        word-spacing: 0.5em;
+        color: var(--blackBgcPrimary);
+      }
+
+      &-up{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      &-img-wrapper{
+        flex-grow: 1;
+
+        img{
+          width: 100%;
+          aspect-ratio: 1;
+          border-radius: 50px;
+
+        }
+      }
+
+
+      &-mid{
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        gap: 12px;
+
+        .offer-card-tag{
+          padding-inline: 15px;
+          border-radius: 100px;
+          font-size: 14px;
+          color: rgb(241, 120, 182);
+          background-color: rgb(252, 221, 236)
+        }
+        .offer-card-time{
+          color: var(--blackBgcPrimary);
+          font-size: 14px;
+        }
+      }
+
+      &-direction{
+        margin: 10px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      &-booking{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+
+        .offer-card-price{
+          font-size: 24px;
+          font-weight: 500;
+
+          &-person{
+            color: var(--blackBgcPrimary);
+            font-size: 18px;
+          }
+        }
+
+        .offer-card-book-btn{
+          background-color: #F7F7F7;
+          color: #3E86F5;
+          border: none;
+          padding: 15px 20px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+}

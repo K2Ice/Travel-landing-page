@@ -1,0 +1,84 @@
+.header{
+  position: relative;
+  height: 100vh;
+  background:url(../pic/header-bgc-pic.jpg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+  &__nav{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 130px;
+
+
+    .brand{
+      font-size: 48px;
+      color:  var(--whitePrimary);
+
+    }
+
+    .nav{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      color:  var(--whitePrimary);
+
+
+      .nav__btn{
+        color:  var(--whitePrimary);
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+      }
+
+      .nav__btn:last-child{
+        align-self: stretch;
+        border: 1px solid;
+        border-radius: 20px;
+        background-color:  var(--whitePrimary);
+        color: #3E86F5;
+        padding: 14px 44px;
+      }
+    }
+  }
+}
+
+.header::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--blackBgcPrimary);
+  content: "";
+}
+
+.header__heading{
+  color: var(--whitePrimary);
+  position: absolute;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  margin: 0 auto;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  &-top{
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
+
+  &-bottom{
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 500;
+  }
+}

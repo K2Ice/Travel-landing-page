@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="header__nav">
+            <strong class="brand">Treloo</strong>
+            <nav class="nav"><button class="nav__btn">Review</button><button class="nav__btn">Tips</button><button class="nav__btn">Alerts</button><button class="nav__btn">Blog</button><button class="nav__btn">Blog</button></nav>
+        </div>
+        <div class="header__heading">
+            <h1 class="header__heading-top"> Discover Your Life, Travel Where You Want </h1>
+            <p class="header__heading-bottom">Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+        </div>
+    </header>
+    <main id="main" class="main container">
+        <section class="main__form-wrapper">
+            <form action="" id="travel-form" class="form">
+                <div class="togglers">
+                    <button type="button" class="form__flight-toggle active"><img src="./pic/flight-icon.png" alt="" class="toggle-icon"><span>Flight</span></button>
+                    <button type="button" class="form__hotel-toggle"><img src="./pic/hotel-icon.png" alt="" class="toggle-icon"><span>Hotel</span></button>
+                </div>
+                <div class="cities">
+                    <div class="cities__from">
+                        <label for="city-from" class="cities__from-label">Leaving from </label><br>
+                        <select name="cityFrom" id="city-from" class="city-from-select">
+                            <option value="Dubai">Dubai</option>
+                            <option value="Warsaw">Warsaw</option>
+                            <option value="Berlin">Berlin</option>
+                        </select>
+                    </div>
+                    <span class="cities__icon"><img src="./pic/cities-plane-icon.png" alt=""></span>
+                    <div class="cities__to">
+                        <label for="city-to" class="cities__to-label">Going to</label><br>
+                        <select name="cityto" id="city-to" class="city-to-select">
+                            <option value="New York">New York</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="London">London</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="dates">
+                    <div class="dates__leave">
+                        <label for="dateLeave" class="dates__leave-label">Leave</label><br>
+                        <div class="date-input-wrapper">
+                            <p id="date-leave-text" class="date-text">DATE LEAVE</p><input type="date" name="dateLeave" id="dateLeave">
+                        </div>
+                    </div>
+                    <span class="dates__icon"><img src="./pic/dates-calendar-icon.png" alt=""></span>
+                    <div class="dates__return">
+                        <label for="dateReturn" class="dates__return-label">Going to</label><br>
+                        <div class="date-input-wrapper">
+                            <p id="date-to-text" class="date-text">DATE TO</p><input type="date" name="dateReturn" id="dateReturn">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="submitBtn"><img src="./pic/search-icon.png" alt=""></button>
+            </form>
+        </section>
+        <section id="special-offers" class="special-offers">
+            <h2 class="special-offers__heading">Special Upcoming Offers</h2>
+            <ul class="special-offers__nav">
+                <li class="special-offers__nav-item active">Team</li>
+                <li class="special-offers__nav-item">Couple</li>
+                <li class="special-offers__nav-item">Family</li>
+            </ul>
+            <div class="special-offers__cards">
+                <div class="special-offers__card offer-card">
+                    <div class="offer-card-up">
+                        <div class="offer-card-img-wrapper"><img src="./pic/special-offer-pic1.jpg" alt=""></div>
+                        <div class="offer-card-date">14 FEB 2022</div>
+                    </div>
+                    <div class="offer-card-mid"><span class="offer-card-tag">Relax</span><span class="offer-card-time">3 Days, 3 Nights</span></div>
+                    <p class="offer-card-direction">Long Sea</p>
+                    <div class="offer-card-booking">
+                        <span class="offer-card-price">700$<span class="offer-card-price-person">/Person</span></span>
+                        <button class="offer-card-book-btn" type="button">Book Now</button>
+                    </div>
+                </div>
+                <div class="special-offers__card offer-card">
+                    <div class="offer-card-up">
+                        <div class="offer-card-img-wrapper"><img src="./pic/special-offer-pic2.jpg" alt=""></div>
+                        <div class="offer-card-date">18 JUN 2022</div>
+                    </div>
+                    <div class="offer-card-mid"><span class="offer-card-tag">Adventure</span><span class="offer-card-time">4 Days, 3 Nights</span></div>
+                    <p class="offer-card-direction">Ansgar Scheffold</p>
+                    <div class="offer-card-booking">
+                        <span class="offer-card-price">400$<span class="offer-card-price-person">/Person</span></span>
+                        <button class="offer-card-book-btn" type="button">Book Now</button>
+                    </div>
+                </div>
+                <div class="special-offers__card offer-card">
+                    <div class="offer-card-up">
+                        <div class="offer-card-img-wrapper"><img src="./pic/special-offer-pic3.jpg" alt=""></div>
+                        <div class="offer-card-date">22 DEC 2022</div>
+                    </div>
+                    <div class="offer-card-mid"><span class="offer-card-tag">Relax</span><span class="offer-card-time">7 Days, 6 Nights</span></div>
+                    <p class="offer-card-direction">Lona X</p>
+                    <div class="offer-card-booking">
+                        <span class="offer-card-price">340$<span class="offer-card-price-person">/Person</span></span>
+                        <button class="offer-card-book-btn" type="button">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="promo" class="promo">
+            <div class="promo__img-wrapper">
+                <img src="./pic/promo-pic.jpg" alt="" class="promo__img">
+                <span class="promo__img-bracket">
+                    <p>300+</p>
+                    <p>DESTINATIONS</p>
+                </span>
+                <span class="promo__img-bracket">
+                    <p>5000+</p>
+                    <p>TOURISTS</p>
+                </span>
+                <span class="promo__img-bracket">
+                    <p>150+</p>
+                    <p>HOTELS</p>
+                </span>
+            </div>
+            <div class="promo__content">
+                <h3 class="promo__content-heading">Travel Any Corner of The World With Us</h3>
+                <p class="promo__content-text">Would you explore nature paradise in the world, let’s find the best destination in world with us, Would you explore nature paradise in the world, let’s find the best destination in world with us. Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+                <p class="promo__content-text">Would you explore nature paradise in the world, let’s find the best destination in world with us.</p>
+                <button type="button" class="promo__content-btn">Contact Us</button>
+            </div>
+        </section>
+        <section id="recommended" class="recommended">
+            <h2 class="recommended__heading">Recommended Destination</h2>
+            <ul class="recommended__nav">
+                <li class="recommended__nav-item active">Popular</li>
+                <li class="recommended__nav-item">Adventure</li>
+                <li class="recommended__nav-item">Beach</li>
+            </ul>
+            <div class="recommended__cards">
+                <div class="recommended__card recommend-card">
+                    <div class="recommend-card-img-wrapper"><img src="./pic/recommend-pic-1.png" alt="">
+                        <div class="recommend-card-rating"><img src="./pic/star.png" alt=""><span>3.4</span></div>
+                    </div>
+                    <p class="recommend-card-direction">Kina Mountain</p>
+                    <p class="recommend-card-location"><img src="./pic/location.png" alt="" class="recommend-card-location-tag"><span class="recommend-card-location-name">Cambodia</span></p>
+                </div>
+                <div class="recommended__card recommend-card">
+                    <div class="recommend-card-img-wrapper"><img src="./pic/recommend-pic-2.png" alt="">
+                        <div class="recommend-card-rating"><img src="./pic/star.png" alt=""><span>4.5</span></div>
+                    </div>
+                    <p class="recommend-card-direction">Kina Mountain</p>
+                    <p class="recommend-card-location"><img src="./pic/location.png" alt="" class="recommend-card-location-tag"><span class="recommend-card-location-name">Cambodia</span></p>
+                </div>
+                <div class="recommended__card recommend-card">
+                    <div class="recommend-card-img-wrapper"><img src="./pic/recommend-pic-3.png" alt="">
+                        <div class="recommend-card-rating"><img src="./pic/star.png" alt=""><span>4.2</span></div>
+                    </div>
+                    <p class="recommend-card-direction">Kina Mountain</p>
+                    <p class="recommend-card-location"><img src="./pic/location.png" alt="" class="recommend-card-location-tag"><span class="recommend-card-location-name">Cambodia</span></p>
+                </div>
+                <div class="recommended__card recommend-card">
+                    <div class="recommend-card-img-wrapper"><img src="./pic/recommend-pic-4.png" alt="">
+                        <div class="recommend-card-rating"><img src="./pic/star.png" alt=""><span>3.5</span></div>
+                    </div>
+                    <p class="recommend-card-direction">Kina Mountain</p>
+                    <p class="recommend-card-location"><img src="./pic/location.png" alt="" class="recommend-card-location-tag"><span class="recommend-card-location-name">Cambodia</span></p>
+                </div>
+            </div>
+        </section>
+        <section id="opinions" class="opinions swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide opinion">
+                    <p class="opinion-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+                    <p class="opinion-author">-Vand D</p>
+                    <p class="opinion-author-company">Happy Treloo</p>
+                </div>
+                <div class="swiper-slide opinion">
+                    <p class="opinion-text">Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+                    <p class="opinion-author">-Vand D</p>
+                    <p class="opinion-author-company">Happy Treloo</p>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

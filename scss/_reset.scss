@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-family: 'Poppins', sans-serif;
+  --whitePrimary: #fff;
+  --blackPrimary: #000;
+  --greenPrimary: #3E86F5;
+  --blackBgcPrimary: rgba(0,0,0,0.5)
+}
+
+.container{
+  padding: 0 10%;
+}

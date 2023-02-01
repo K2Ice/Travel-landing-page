@@ -1,0 +1,19 @@
+.opinion{
+  padding: 85px 25px 0 50px;
+  background-color: var(--whitePrimary);
+  border-radius: 50px;
+
+  &-text{
+  }
+
+  &-author{
+    color: var(--greenPrimary)
+  }
+}
+
+.opinion > p{
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+  margin-bottom: 10px;
+}
