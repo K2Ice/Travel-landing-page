@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <header id="header" class="header">
+    <header id="header" class="header container">
         <div class="header__nav">
             <strong class="brand">Treloo</strong>
-            <nav class="nav"><button class="nav__btn">Review</button><button class="nav__btn">Tips</button><button class="nav__btn">Alerts</button><button class="nav__btn">Blog</button><button class="nav__btn">Blog</button></nav>
+            <nav class="nav"><a href="#" class="nav__btn">Review</a><a href="#" class="nav__btn">Tips</a><a href="#" class="nav__btn">Alerts</a><a href="#" class="nav__btn">Blog</a><a href="#" class="nav__btn">Blog</a></nav>
         </div>
         <div class="header__heading">
             <h1 class="header__heading-top"> Discover Your Life, Travel Where You Want </h1>
@@ -26,47 +26,49 @@
     </header>
     <main id="main" class="main container">
         <section class="main__form-wrapper">
-            <form action="" id="travel-form" class="form">
-                <div class="togglers">
-                    <button type="button" class="form__flight-toggle active"><img src="./pic/flight-icon.png" alt="" class="toggle-icon"><span>Flight</span></button>
-                    <button type="button" class="form__hotel-toggle"><img src="./pic/hotel-icon.png" alt="" class="toggle-icon"><span>Hotel</span></button>
-                </div>
-                <div class="cities">
-                    <div class="cities__from">
-                        <label for="city-from" class="cities__from-label">Leaving from </label><br>
-                        <select name="cityFrom" id="city-from" class="city-from-select">
-                            <option value="Dubai">Dubai</option>
-                            <option value="Warsaw">Warsaw</option>
-                            <option value="Berlin">Berlin</option>
-                        </select>
+            <div class="box-form">
+                <form action="" id="travel-form" class="form">
+                    <div class="togglers">
+                        <button type="button" class="form__flight-toggle active"><img src="./pic/flight-icon.png" alt="" class="toggle-icon"><span>Flight</span></button>
+                        <button type="button" class="form__hotel-toggle"><img src="./pic/hotel-icon.png" alt="" class="toggle-icon"><span>Hotel</span></button>
                     </div>
-                    <span class="cities__icon"><img src="./pic/cities-plane-icon.png" alt=""></span>
-                    <div class="cities__to">
-                        <label for="city-to" class="cities__to-label">Going to</label><br>
-                        <select name="cityto" id="city-to" class="city-to-select">
-                            <option value="New York">New York</option>
-                            <option value="Madrid">Madrid</option>
-                            <option value="London">London</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="dates">
-                    <div class="dates__leave">
-                        <label for="dateLeave" class="dates__leave-label">Leave</label><br>
-                        <div class="date-input-wrapper">
-                            <p id="date-leave-text" class="date-text">DATE LEAVE</p><input type="date" name="dateLeave" id="dateLeave">
+                    <div class="cities">
+                        <div class="cities__from">
+                            <label for="city-from" class="cities__from-label">Leaving from </label><br>
+                            <select name="cityFrom" id="city-from" class="city-from-select">
+                                <option value="Dubai">Dubai</option>
+                                <option value="Warsaw">Warsaw</option>
+                                <option value="Berlin">Berlin</option>
+                            </select>
+                        </div>
+                        <span class="cities__icon"><img src="./pic/cities-plane-icon.png" alt=""></span>
+                        <div class="cities__to">
+                            <label for="city-to" class="cities__to-label">Going to</label><br>
+                            <select name="cityto" id="city-to" class="city-to-select">
+                                <option value="New York">New York</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="London">London</option>
+                            </select>
                         </div>
                     </div>
-                    <span class="dates__icon"><img src="./pic/dates-calendar-icon.png" alt=""></span>
-                    <div class="dates__return">
-                        <label for="dateReturn" class="dates__return-label">Going to</label><br>
-                        <div class="date-input-wrapper">
-                            <p id="date-to-text" class="date-text">DATE TO</p><input type="date" name="dateReturn" id="dateReturn">
+                    <div class="dates">
+                        <div class="dates__leave">
+                            <label for="dateLeave" class="dates__leave-label">Leave</label><br>
+                            <div class="date-input-wrapper">
+                                <p id="date-leave-text" class="date-text">DATE LEAVE</p><input type="date" name="dateLeave" id="dateLeave">
+                            </div>
+                        </div>
+                        <span class="dates__icon"><img src="./pic/dates-calendar-icon.png" alt=""></span>
+                        <div class="dates__return">
+                            <label for="dateReturn" class="dates__return-label">Going to</label><br>
+                            <div class="date-input-wrapper">
+                                <p id="date-to-text" class="date-text">DATE TO</p><input type="date" name="dateReturn" id="dateReturn">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <button type="button" class="submitBtn"><img src="./pic/search-icon.png" alt=""></button>
-            </form>
+                    <button type="button" class="submitBtn"><img src="./pic/search-icon.png" alt=""></button>
+                </form>
+            </div>
         </section>
         <section id="special-offers" class="special-offers">
             <h2 class="special-offers__heading">Special Upcoming Offers</h2>

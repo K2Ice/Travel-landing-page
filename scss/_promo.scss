@@ -1,8 +1,9 @@
 .promo{
   display: flex;
-  gap: 30px;
+  justify-content: flex-end;
+  // gap: 30px;
   height: 100vh;
-  padding-block: 100px;
+  // padding-block: 100px;
 
   &__img-wrapper{
     position: relative;
